@@ -10,8 +10,7 @@ export default async function handleProfileSignup(firstName, lastName, fileName)
 
     await uploadPhoto(fileName);
   } catch (err) {
-    const errorMessage = `Error processing ${fileName}: ${err.message}`;
-    response.push({ status: 'rejected', value: errorMessage });
+    response.push({ status: 'rejected', value: `Error: ${fileName} cannot be processed` });
   }
 
   return response;
