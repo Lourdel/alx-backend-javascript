@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+// console.js
+
+function displayMessage(message) {
+  console.log(message);
+}
+
+module.exports = displayMessage;
